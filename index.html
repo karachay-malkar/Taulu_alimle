@@ -7,20 +7,16 @@
   <meta name="description" content="Проект Таулу Алимле: каталог докторов и кандидатов наук, новости, мероприятия, библиотека и регистрация." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="hero-bg" aria-hidden="true"></div>
-  <header class="site-header">
+  <header class="site-header" id="navbar">
     <div class="container header-inner">
       <a href="#home" class="brand" data-route="home">
-        <div class="brand-mark">
-          <span class="peak peak-1"></span>
-          <span class="peak peak-2"></span>
-        </div>
         <div>
-          <div class="brand-title">ТАУЛУ АЛИМЛЕ</div>
+          <div class="brand-title">ТАУЛУ <span>АЛИМЛЕ</span></div>
           <div class="brand-subtitle">Научный проект и цифровая библиотека</div>
         </div>
       </a>
@@ -40,21 +36,37 @@
 
   <main id="app"></main>
 
+  <div class="modal-overlay" id="regModal"></div>
+  <div class="modal-overlay" id="profileModal"></div>
+
   <footer class="site-footer">
-    <div class="container footer-inner">
+    <div class="container footer-grid">
       <div>
-        <div class="footer-title">ТАУЛУ АЛИМЛЕ</div>
-        <p>Каталог ученых, библиотека научных публикаций, новости и мероприятия проекта.</p>
+        <div class="footer-brand-name">ТАУЛУ АЛИМЛЕ</div>
+        <p class="footer-tagline">Проект-энциклопедия, сохраняющий научное наследие карачаево-балкарского народа для будущих поколений.</p>
       </div>
-      <div>
-        <div class="footer-title">Разделы</div>
-        <div class="footer-links">
-          <a href="#doctors" data-route="doctors">Доктора наук</a>
-          <a href="#candidates" data-route="candidates">Кандидаты наук</a>
-          <a href="#library" data-route="library">Библиотека</a>
-          <a href="#register" data-route="register">Регистрация</a>
-        </div>
+      <div class="footer-col">
+        <h4>Разделы</h4>
+        <ul>
+          <li><a href="#about" data-route="about">О проекте</a></li>
+          <li><a href="#doctors" data-route="doctors">Доктора наук</a></li>
+          <li><a href="#candidates" data-route="candidates">Кандидаты наук</a></li>
+          <li><a href="#library" data-route="library">Библиотека</a></li>
+          <li><a href="#contacts" data-route="contacts">Контакты</a></li>
+        </ul>
       </div>
+      <div class="footer-col">
+        <h4>Действия</h4>
+        <ul>
+          <li><a href="#news" data-route="news">Новости</a></li>
+          <li><a href="#events" data-route="events">Мероприятия</a></li>
+          <li><a href="#register" data-route="register">Регистрация</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <div class="footer-copy">© 2026 ТАУЛУ АЛИМЛЕ. Все права защищены.</div>
+      <div class="footer-copy">Проект посвящён учёным горского народа</div>
     </div>
   </footer>
 
