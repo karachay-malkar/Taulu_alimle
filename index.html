@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Таулу Алимле</title>
+  <meta name="description" content="Проект Таулу Алимле: каталог докторов и кандидатов наук, новости, мероприятия, библиотека и регистрация." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="hero-bg" aria-hidden="true"></div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="brand" data-route="home">
+        <div class="brand-mark">
+          <span class="peak peak-1"></span>
+          <span class="peak peak-2"></span>
+        </div>
+        <div>
+          <div class="brand-title">ТАУЛУ АЛИМЛЕ</div>
+          <div class="brand-subtitle">Научный проект и цифровая библиотека</div>
+        </div>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-label="Открыть меню">☰</button>
+      <nav class="main-nav" id="mainNav">
+        <a href="#about" data-route="about">О проекте</a>
+        <a href="#doctors" data-route="doctors">Доктора наук</a>
+        <a href="#candidates" data-route="candidates">Кандидаты наук</a>
+        <a href="#news" data-route="news">Новости</a>
+        <a href="#events" data-route="events">Мероприятия</a>
+        <a href="#library" data-route="library">Библиотека</a>
+        <a href="#contacts" data-route="contacts">Контакты</a>
+        <a href="#register" data-route="register" class="nav-cta">Регистрация</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="app"></main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="footer-title">ТАУЛУ АЛИМЛЕ</div>
+        <p>Каталог ученых, библиотека научных публикаций, новости и мероприятия проекта.</p>
+      </div>
+      <div>
+        <div class="footer-title">Разделы</div>
+        <div class="footer-links">
+          <a href="#doctors" data-route="doctors">Доктора наук</a>
+          <a href="#candidates" data-route="candidates">Кандидаты наук</a>
+          <a href="#library" data-route="library">Библиотека</a>
+          <a href="#register" data-route="register">Регистрация</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
